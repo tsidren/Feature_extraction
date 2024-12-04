@@ -1,0 +1,51 @@
+Found 2500 files belonging to 5 classes.
+WARNING:tensorflow:`input_shape` is undefined or non-square, or `rows` is not in [128, 160, 192, 224]. Weights for input shape (224, 224) will be loaded as the default.
+Downloading data from https://storage.googleapis.com/tensorflow/keras-applications/mobilenet/mobilenet_1_0_224_tf_no_top.h5
+17225924/17225924 [==============================] - 3s 0us/step
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ mobilenet_1.00_224 (Functio  (None, 1024)             3228864   
+ nal)                                                            
+                                                                 
+ module_wrapper (ModuleWrapp  (None, 1024)             0         
+ er)                                                             
+                                                                 
+ module_wrapper_1 (ModuleWra  (None, 512)              524800    
+ pper)                                                           
+                                                                 
+ module_wrapper_2 (ModuleWra  (None, 5)                2565      
+ pper)                                                           
+                                                                 
+=================================================================
+Total params: 3,756,229
+Trainable params: 527,365
+Non-trainable params: 3,228,864
+_________________________________________________________________
+C:\Users\shivanshu\anaconda3\envs\py310\lib\site-packages\keras\optimizers\optimizer_v2\adam.py:114: UserWarning: The `lr` argument is deprecated, use `learning_rate` instead.
+  super().__init__(name, **kwargs)
+Epoch 1/10
+55/55 [==============================] - 9s 53ms/step - loss: 0.6733 - accuracy: 0.7483 - val_loss: 0.3944 - val_accuracy: 0.8667
+Epoch 2/10
+55/55 [==============================] - 1s 24ms/step - loss: 0.3256 - accuracy: 0.8778 - val_loss: 0.3199 - val_accuracy: 0.8833
+Epoch 3/10
+55/55 [==============================] - 1s 24ms/step - loss: 0.2459 - accuracy: 0.9091 - val_loss: 0.3009 - val_accuracy: 0.8979
+Epoch 4/10
+55/55 [==============================] - 1s 24ms/step - loss: 0.2026 - accuracy: 0.9290 - val_loss: 0.2438 - val_accuracy: 0.9187
+Epoch 5/10
+55/55 [==============================] - 1s 24ms/step - loss: 0.1863 - accuracy: 0.9335 - val_loss: 0.2156 - val_accuracy: 0.9271
+Epoch 6/10
+55/55 [==============================] - 1s 24ms/step - loss: 0.1258 - accuracy: 0.9608 - val_loss: 0.2193 - val_accuracy: 0.9333
+Epoch 7/10
+55/55 [==============================] - 1s 24ms/step - loss: 0.0785 - accuracy: 0.9790 - val_loss: 0.1944 - val_accuracy: 0.9458
+Epoch 8/10
+55/55 [==============================] - 1s 24ms/step - loss: 0.0573 - accuracy: 0.9886 - val_loss: 0.1771 - val_accuracy: 0.9542
+Epoch 9/10
+55/55 [==============================] - 1s 24ms/step - loss: 0.0520 - accuracy: 0.9864 - val_loss: 0.1800 - val_accuracy: 0.9542
+Epoch 10/10
+55/55 [==============================] - 1s 24ms/step - loss: 0.0321 - accuracy: 0.9972 - val_loss: 0.1778 - val_accuracy: 0.9563
+WARNING:absl:Function `_wrapped_model` contains input name(s) mobilenet_1.00_224_input with unsupported characters which will be renamed to mobilenet_1_00_224_input in the SavedModel.
+WARNING:absl:Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 33). These functions will not be directly callable after loading.
+
+Process finished with exit code 0

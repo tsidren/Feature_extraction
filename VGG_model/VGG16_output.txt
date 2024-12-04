@@ -1,0 +1,50 @@
+Found 2500 files belonging to 5 classes.
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ vgg16 (Functional)          (None, 512)               14714688  
+                                                                 
+ module_wrapper (ModuleWrapp  (None, 512)              0         
+ er)                                                             
+                                                                 
+ module_wrapper_1 (ModuleWra  (None, 512)              262656    
+ pper)                                                           
+                                                                 
+ module_wrapper_2 (ModuleWra  (None, 5)                2565      
+ pper)                                                           
+                                                                 
+=================================================================
+Total params: 14,979,909
+Trainable params: 265,221
+Non-trainable params: 14,714,688
+_________________________________________________________________
+C:\Users\shivanshu\anaconda3\envs\py310\lib\site-packages\keras\optimizers\optimizer_v2\adam.py:114: UserWarning: The `lr` argument is deprecated, use `learning_rate` instead.
+  super().__init__(name, **kwargs)
+Epoch 1/10
+2024-09-17 00:02:30.438108: W tensorflow/core/common_runtime/bfc_allocator.cc:290] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.24GiB with freed_by_count=0. The caller indicates that this is not a failure, but this may mean that there could be performance gains if more memory were available.
+2024-09-17 00:02:30.438627: W tensorflow/core/common_runtime/bfc_allocator.cc:290] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.24GiB with freed_by_count=0. The caller indicates that this is not a failure, but this may mean that there could be performance gains if more memory were available.
+2024-09-17 00:02:30.438984: W tensorflow/core/common_runtime/bfc_allocator.cc:290] Allocator (GPU_0_bfc) ran out of memory trying to allocate 3.04GiB with freed_by_count=0. The caller indicates that this is not a failure, but this may mean that there could be performance gains if more memory were available.
+2024-09-17 00:02:30.439197: W tensorflow/core/common_runtime/bfc_allocator.cc:290] Allocator (GPU_0_bfc) ran out of memory trying to allocate 3.04GiB with freed_by_count=0. The caller indicates that this is not a failure, but this may mean that there could be performance gains if more memory were available.
+55/55 [==============================] - 18s 129ms/step - loss: 0.2885 - accuracy: 0.9051 - val_loss: 0.0900 - val_accuracy: 0.9708
+Epoch 2/10
+55/55 [==============================] - 6s 106ms/step - loss: 0.0462 - accuracy: 0.9847 - val_loss: 0.0718 - val_accuracy: 0.9750
+Epoch 3/10
+55/55 [==============================] - 6s 105ms/step - loss: 0.0202 - accuracy: 0.9937 - val_loss: 0.0370 - val_accuracy: 0.9896
+Epoch 4/10
+55/55 [==============================] - 6s 105ms/step - loss: 0.0023 - accuracy: 1.0000 - val_loss: 0.0313 - val_accuracy: 0.9896
+Epoch 5/10
+55/55 [==============================] - 6s 105ms/step - loss: 0.0011 - accuracy: 1.0000 - val_loss: 0.0293 - val_accuracy: 0.9896
+Epoch 6/10
+55/55 [==============================] - 6s 105ms/step - loss: 7.7530e-04 - accuracy: 1.0000 - val_loss: 0.0306 - val_accuracy: 0.9896
+Epoch 7/10
+55/55 [==============================] - 6s 106ms/step - loss: 6.3248e-04 - accuracy: 1.0000 - val_loss: 0.0303 - val_accuracy: 0.9896
+Epoch 8/10
+55/55 [==============================] - 6s 107ms/step - loss: 5.2598e-04 - accuracy: 1.0000 - val_loss: 0.0304 - val_accuracy: 0.9896
+Epoch 9/10
+55/55 [==============================] - 6s 107ms/step - loss: 4.4916e-04 - accuracy: 1.0000 - val_loss: 0.0309 - val_accuracy: 0.9917
+Epoch 10/10
+55/55 [==============================] - 6s 107ms/step - loss: 3.9655e-04 - accuracy: 1.0000 - val_loss: 0.0309 - val_accuracy: 0.9917
+WARNING:absl:Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 19). These functions will not be directly callable after loading.
+
+Process finished with exit code 0

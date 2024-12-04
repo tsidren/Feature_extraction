@@ -1,0 +1,46 @@
+Found 2500 files belonging to 5 classes.
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ resnet50 (Functional)       (None, 2048)              23587712  
+                                                                 
+ module_wrapper (ModuleWrapp  (None, 2048)             0         
+ er)                                                             
+                                                                 
+ module_wrapper_1 (ModuleWra  (None, 512)              1049088   
+ pper)                                                           
+                                                                 
+ module_wrapper_2 (ModuleWra  (None, 5)                2565      
+ pper)                                                           
+                                                                 
+=================================================================
+Total params: 24,639,365
+Trainable params: 1,051,653
+Non-trainable params: 23,587,712
+_________________________________________________________________
+C:\Users\shivanshu\anaconda3\envs\py310\lib\site-packages\keras\optimizers\optimizer_v2\adam.py:114: UserWarning: The `lr` argument is deprecated, use `learning_rate` instead.
+  super().__init__(name, **kwargs)
+Epoch 1/10
+55/55 [==============================] - 20s 141ms/step - loss: 0.1754 - accuracy: 0.9347 - val_loss: 0.0694 - val_accuracy: 0.9792
+Epoch 2/10
+55/55 [==============================] - 4s 76ms/step - loss: 0.0780 - accuracy: 0.9716 - val_loss: 0.1157 - val_accuracy: 0.9563
+Epoch 3/10
+55/55 [==============================] - 4s 73ms/step - loss: 0.0205 - accuracy: 0.9920 - val_loss: 0.0123 - val_accuracy: 0.9937
+Epoch 4/10
+55/55 [==============================] - 4s 75ms/step - loss: 0.0069 - accuracy: 0.9983 - val_loss: 0.0095 - val_accuracy: 0.9979
+Epoch 5/10
+55/55 [==============================] - 4s 72ms/step - loss: 0.0015 - accuracy: 1.0000 - val_loss: 0.0057 - val_accuracy: 0.9958
+Epoch 6/10
+55/55 [==============================] - 4s 72ms/step - loss: 6.3285e-04 - accuracy: 1.0000 - val_loss: 0.0064 - val_accuracy: 0.9958
+Epoch 7/10
+55/55 [==============================] - 4s 73ms/step - loss: 4.9503e-04 - accuracy: 1.0000 - val_loss: 0.0042 - val_accuracy: 1.0000
+Epoch 8/10
+55/55 [==============================] - 4s 72ms/step - loss: 3.5060e-04 - accuracy: 1.0000 - val_loss: 0.0041 - val_accuracy: 1.0000
+Epoch 9/10
+55/55 [==============================] - 4s 73ms/step - loss: 3.0652e-04 - accuracy: 1.0000 - val_loss: 0.0041 - val_accuracy: 1.0000
+Epoch 10/10
+55/55 [==============================] - 4s 76ms/step - loss: 2.7237e-04 - accuracy: 1.0000 - val_loss: 0.0034 - val_accuracy: 1.0000
+WARNING:absl:Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 59). These functions will not be directly callable after loading.
+
+Process finished with exit code 0

@@ -1,0 +1,48 @@
+Found 2500 files belonging to 5 classes.
+Downloading data from https://storage.googleapis.com/tensorflow/keras-applications/inception_v3/inception_v3_weights_tf_dim_ordering_tf_kernels_notop.h5
+87910968/87910968 [==============================] - 7s 0us/step
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ inception_v3 (Functional)   (None, 2048)              21802784  
+                                                                 
+ module_wrapper (ModuleWrapp  (None, 2048)             0         
+ er)                                                             
+                                                                 
+ module_wrapper_1 (ModuleWra  (None, 512)              1049088   
+ pper)                                                           
+                                                                 
+ module_wrapper_2 (ModuleWra  (None, 5)                2565      
+ pper)                                                           
+                                                                 
+=================================================================
+Total params: 22,854,437
+Trainable params: 1,051,653
+Non-trainable params: 21,802,784
+_________________________________________________________________
+C:\Users\shivanshu\anaconda3\envs\py310\lib\site-packages\keras\optimizers\optimizer_v2\adam.py:114: UserWarning: The `lr` argument is deprecated, use `learning_rate` instead.
+  super().__init__(name, **kwargs)
+Epoch 1/10
+55/55 [==============================] - 13s 104ms/step - loss: 25.4301 - accuracy: 0.5483 - val_loss: 2.8636 - val_accuracy: 0.7229
+Epoch 2/10
+55/55 [==============================] - 3s 62ms/step - loss: 3.3532 - accuracy: 0.6625 - val_loss: 2.1854 - val_accuracy: 0.7521
+Epoch 3/10
+55/55 [==============================] - 3s 62ms/step - loss: 2.5300 - accuracy: 0.7028 - val_loss: 2.9142 - val_accuracy: 0.6812
+Epoch 4/10
+55/55 [==============================] - 3s 62ms/step - loss: 2.2186 - accuracy: 0.7244 - val_loss: 2.7273 - val_accuracy: 0.6917
+Epoch 5/10
+55/55 [==============================] - 3s 62ms/step - loss: 1.4786 - accuracy: 0.7494 - val_loss: 2.0723 - val_accuracy: 0.6854
+Epoch 6/10
+55/55 [==============================] - 3s 62ms/step - loss: 0.9692 - accuracy: 0.8045 - val_loss: 0.8894 - val_accuracy: 0.8104
+Epoch 7/10
+55/55 [==============================] - 3s 62ms/step - loss: 0.8573 - accuracy: 0.8057 - val_loss: 0.8259 - val_accuracy: 0.8000
+Epoch 8/10
+55/55 [==============================] - 3s 62ms/step - loss: 1.0368 - accuracy: 0.7778 - val_loss: 1.0441 - val_accuracy: 0.8021
+Epoch 9/10
+55/55 [==============================] - 3s 62ms/step - loss: 0.8151 - accuracy: 0.8040 - val_loss: 0.5630 - val_accuracy: 0.8292
+Epoch 10/10
+55/55 [==============================] - 4s 65ms/step - loss: 0.9976 - accuracy: 0.7955 - val_loss: 0.7853 - val_accuracy: 0.8042
+WARNING:absl:Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 100). These functions will not be directly callable after loading.
+
+Process finished with exit code 0

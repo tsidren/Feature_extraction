@@ -1,0 +1,47 @@
+Found 2500 files belonging to 5 classes.
+Downloading data from https://storage.googleapis.com/tensorflow/keras-applications/efficientnet_v2/efficientnetv2-l_notop.h5
+473176280/473176280 [==============================] - 33s 0us/step
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ efficientnetv2-l (Functiona  (None, 1280)             117746848 
+ l)                                                              
+                                                                 
+ module_wrapper (ModuleWrapp  (None, 1280)             0         
+ er)                                                             
+                                                                 
+ module_wrapper_1 (ModuleWra  (None, 512)              655872    
+ pper)                                                           
+                                                                 
+ module_wrapper_2 (ModuleWra  (None, 5)                2565      
+ pper)                                                           
+                                                                 
+=================================================================
+Total params: 118,405,285
+Trainable params: 658,437
+Non-trainable params: 117,746,848
+_________________________________________________________________
+C:\Users\shivanshu\anaconda3\envs\py310\lib\site-packages\keras\optimizers\optimizer_v2\adam.py:114: UserWarning: The `lr` argument is deprecated, use `learning_rate` instead.
+  super().__init__(name, **kwargs)
+Epoch 1/10
+55/55 [==============================] - 46s 404ms/step - loss: 0.2949 - accuracy: 0.9097 - val_loss: 0.0729 - val_accuracy: 0.9729
+Epoch 2/10
+55/55 [==============================] - 15s 269ms/step - loss: 0.0655 - accuracy: 0.9790 - val_loss: 0.0492 - val_accuracy: 0.9854
+Epoch 3/10
+55/55 [==============================] - 16s 284ms/step - loss: 0.0344 - accuracy: 0.9903 - val_loss: 0.0353 - val_accuracy: 0.9917
+Epoch 4/10
+55/55 [==============================] - 15s 279ms/step - loss: 0.0248 - accuracy: 0.9949 - val_loss: 0.0585 - val_accuracy: 0.9729
+Epoch 5/10
+55/55 [==============================] - 15s 283ms/step - loss: 0.0262 - accuracy: 0.9915 - val_loss: 0.0224 - val_accuracy: 0.9937
+Epoch 6/10
+55/55 [==============================] - 16s 283ms/step - loss: 0.0212 - accuracy: 0.9943 - val_loss: 0.0262 - val_accuracy: 0.9917
+Epoch 7/10
+55/55 [==============================] - 15s 282ms/step - loss: 0.0190 - accuracy: 0.9926 - val_loss: 0.0252 - val_accuracy: 0.9917
+Epoch 8/10
+55/55 [==============================] - 16s 285ms/step - loss: 0.0146 - accuracy: 0.9949 - val_loss: 0.0334 - val_accuracy: 0.9854
+Epoch 9/10
+55/55 [==============================] - 15s 282ms/step - loss: 0.0175 - accuracy: 0.9955 - val_loss: 0.0295 - val_accuracy: 0.9917
+Epoch 10/10
+55/55 [==============================] - 16s 285ms/step - loss: 0.0203 - accuracy: 0.9937 - val_loss: 0.0280 - val_accuracy: 0.9854
+WARNING:absl:Function `_wrapped_model` contains input name(s) efficientnetv2-l_input with unsupported characters which will be renamed to efficientnetv2_l_input in the SavedModel.
